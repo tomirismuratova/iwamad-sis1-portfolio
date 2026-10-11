@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Tomiris's personal web development portfolio.">
+
+  <title>Tomiris | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a href="#about" class="logo">Tomiris M.</a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Switch to dark mode"
+        aria-pressed="false">
+        Dark Mode
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="section hero">
+      <div class="container">
+
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm Tomiris!</h1>
+
+        <h2>About Me</h2>
+
+        <p>
+          I'm a KBTU student interested in web
+          development, design, and creating
+          user-friendly digital experiences.
+        </p>
+
+        <p>
+          I'm currently learning HTML, CSS,
+          JavaScript, and React. I enjoy building
+          websites and improving my technical
+          and creative skills.
+        </p>
+
+        <a href="#projects" class="btn">
+          Explore My Projects
+        </a>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+
+        <h2>My Projects</h2>
+
+        <p class="section-description">
+          Here are some projects I have worked on
+          during my web development course.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+
+            <span class="project-number">01</span>
+
+            <h3>Week 3 - Profile Card</h3>
+
+            <p>
+            I built a personal profile card using React
+            and TypeScript. I practiced creating React
+            components, organizing project files,
+            and styling the interface with CSS.
+            </p>
+
+            <a
+              href="https://github.com/tomirismuratova/iwamad-practice/tree/week-03"
+              target="_blank"
+              rel="noopener noreferrer">
+              View Project →
+            </a>
+
+          </article>
+
+          <article class="project-card">
+
+            <span class="project-number">02</span>
+
+            <h3>Week 4 - React Routing</h3>
+
+            
+            <p>
+            I developed a multi-page React application
+            using React Router. I implemented navigation,
+            a shared layout, and a like button using
+            Context API. I also tested the button
+            with Vitest.
+            </p>
+
+
+            <a
+              href="https://github.com/tomirismuratova/iwamad-practice/tree/week-04"
+              target="_blank"
+              rel="noopener noreferrer">
+              View Project →
+            </a>
+
+          </article>
+
+          
+          <article class="project-card">
+
+            <span class="project-number">03</span>
+
+            <h3>Week 5 - Design Tokens & UI Components</h3>
+
+            <p>
+            I worked with Figma handoff, design tokens,
+            and UI components. This project helped me
+            understand how to maintain consistent colors,
+            typography, and reusable interface elements
+            during web development.
+            </p>
+
+            <a
+            href="https://github.com/tomirismuratova/iwamad-practice/tree/week-05"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Project →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+
+        <h2>Contact Me</h2>
+
+        <p class="section-description">
+          Have a question or want to connect?
+          Feel free to leave a message below.
+        </p>
+
+        <form id="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+              aria-describedby="name-error">
+
+            <p class="error-message"
+               id="name-error"
+               aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error">
+
+            <p class="error-message"
+               id="email-error"
+               aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message"
+              required
+              aria-describedby="message-error"></textarea>
+
+            <p class="error-message"
+               id="message-error"
+               aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn">
+            Send Message
+          </button>
+
+          <p id="form-status"
+             role="status"
+             aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <p>© 2026 Tomiris Muratova. All rights reserved.</p>
+
+      <a href="#about">Back to Top ↑</a>
+
+    </div>
+  </footer>
+
+</body>
+</html>
