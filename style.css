@@ -317,3 +317,24 @@ textarea {
     padding-top: 35px;
   }
 }
+
+
+/* form validation feedback */
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border: 2px solid #e35d6a;
+}
+
+#form-status:not(:empty) {
+  color: #237a4b;
+}
+
+html[data-theme="dark"] #form-status:not(:empty) {
+  color: #86e0a8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
